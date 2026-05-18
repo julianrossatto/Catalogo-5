@@ -5,12 +5,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Catálogo de Filmes e Séries</title>
     <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+
+
 </head>
 <body>
 
 <header>
-    <nav>
-        <h2>🎬 CATÁLOGO</h2>
+    <nav class="nav-principal">
+        <img src="img/claquete.png" style="width: 50px; height: auto;">
+        <h2 style="background-color: #D4AF37;">CATÁLOGO</h2>
         <div class="nav-links">
             <a href="#inicio">INÍCIO</a>
             <a href="#filmes">FILMES</a>
@@ -20,142 +30,482 @@
 </header>
 
 <!-- INÍCIO -->
-<section id="inicio" class="secao">
-    <h1>Bem-vindo ao Catálogo</h1>
+<section id="inicio" class="secao" style="padding: 100px 0px 100px 0px ; font-family: 'Roboto', sans-serif; font-size: 2em;">
+    <h1 style="color: white;">Bem-vindo ao Catálogo!</h1>
+        <h4>O seu espaço para descobrir as melhores produções do cinema e do streaming em um só lugar.
+            <br>Aqui você encontra listas Top 5 dos melhores filmes de 2025 em cada categoria</h4>
+        <span>Cada seleção foi pensada para destacar os títulos mais comentados, bem avaliados e imperdíveis do momento.
+            <br>Explore, descubra novos favoritos e mergulhe em histórias incríveis organizadas de forma simples, rápida e intuitiva. Seu próximo filme favorito pode estar aqui.</span>
+</section>
+
+
+<div class="body2">
+<aside>
+    <h1 style="color: white;">Curiosidades</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque atque facilis perspiciatis aperiam suscipit aspernatur a quas ipsam culpa ea error mollitia quibusdam hic, iste nemo? Nihil incidunt natus assumenda?</p>
+</aside>
+
+<section id="filmes" class="secao">
     <br>
-    <p>Explore filmes e séries incríveis em um só lugar!</p>
-</section>
 
-<section id="filmes" class="secao">
-    <h1 style="margin-bottom: 20px;">Filmes</h1>
-        <h2>Categoria: Ação</h2>
-            <div class="carousel-container">
-                <button class="prev">◀</button>
+    <h1 style="letter-spacing: 20px;">Filmes</h1>
+
+<div class="categoria" id="acao">
+    <h2>Categoria: Ação e Aventura</h2>
+    <button class="toggleBtn">Ocultar</button>
+    <div class="conteudo">
+        <div class="carousel-container">
+            <button class="prev">◀</button>
+
             <div class="topicos">
-            <div class="card">
-                <h3 class="titulo">Top 1</h3>
-                <div class="conteudo">
-                    <img src="img/top1-filme1.webp" alt="">
-                    <div class="info">
-                        <p>Filme de ação incrível</p>
-                        <div class="avaliacao">★★★★★</div>
+                <div class="card">
+                    <div class="topo-card">
+                        <h3 class="top">1</h3>
+                        <h3 class="titulo">PECADORES</h3>
                     </div>
-                </div>
-            </div>
+                        <div class="conteudo-card">
+                            <img src="img/pecadores.webp">
+                            <div class="info">
+                                <p>17 de abril de 2025  | 2h 17min<br>
+                                    Direção: Ryan Coogler | Roteiro Ryan Coogler 
+                                    <br>Elenco: Michael B. Jordan, Hailee Steinfeld, Miles Caton
+                                    <br>Avaliação: 4.95/5 <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i> 
 
-            <div class="card">
-                <h3 class="titulo">Top 2</h3>
-                <div class="conteudo">
-                    <img src="img/top1-filme1.webp" alt="">
-                    <div class="info">
-                        <p>Muita adrenalina e explosões</p>
-                        <div class="avaliacao">★★★★☆</div>
-                    </div>
+                                    <br><br>Dois irmãos gêmeos (ambos interpretados por Michael B. Jordan) retornam ao Mississippi em 1932 para recomeçar a vida e abrir um clube de blues. Além de enfrentarem o racismo, traumas do passado e a ameaça de extremistas locais, eles se deparam com uma aterrorizante força sobrenatural sedenta por sangue.</p>
+                            </div>
+                        </div>
                 </div>
-            </div>
 
-            <div class="card">
-                <h3 class="titulo">Top 3</h3>
-                <div class="conteudo">
-                    <img src="img/top1-filme1.webp" alt="">
-                    <div class="info">
-                        <p>Muita adrenalina e explosões</p>
-                        <div class="avaliacao">★★★★☆</div>
-                    </div>
-                </div>
-            </div>
 
-            <div class="card">
-                <h3 class="titulo">Top 4</h3>
-                <div class="conteudo">
-                    <img src="img/top1-filme1.webp" alt="">
-                    <div class="info">
-                        <p>Muita adrenalina e explosões</p>
-                        <div class="avaliacao">★★★★☆</div>
+                <div class="card">
+                    <div class="topo-card">
+                        <h3 class="top">2</h3>
+                        <h3 class="titulo">Top 2</h3>
                     </div>
+                        <div class="conteudo-card">
+                            <img src="img/top1-filme1.webp">
+                            <div class="info">
+                                <p>Filme de ação incrível</p>
+                            </div>
+                        </div>
                 </div>
-            </div>
 
-            <div class="card">
-                <h3 class="titulo">Top 5</h3>
-                <div class="conteudo">
-                    <img src="img/top1-filme1.webp" alt="">
-                    <div class="info">
-                        <p>Muita adrenalina e explosões</p>
-                        <div class="avaliacao">★★★★☆</div>
+
+                <div class="card">
+                    <div class="topo-card">
+                        <h3 class="top">3</h3>
+                        <h3 class="titulo">Top 3</h3>
                     </div>
+                        <div class="conteudo-card">
+                            <img src="img/top1-filme1.webp">
+                            <div class="info">
+                                <p>Filme de ação incrível</p>
+                            </div>
+                        </div>
                 </div>
+
+
+                <div class="card">
+                    <div class="topo-card">
+                        <h3 class="top">4</h3>
+                        <h3 class="titulo">Top 4</h3>
+                    </div>
+                        <div class="conteudo-card">
+                            <img src="img/top1-filme1.webp">
+                            <div class="info">
+                                <p>Filme de ação incrível</p>
+                            </div>
+                        </div>
+                </div>
+
+
+                <div class="card">
+                    <div class="topo-card">
+                        <h3 class="top">5</h3>
+                        <h3 class="titulo">Top 5</h3>
+                    </div>
+                        <div class="conteudo-card">
+                            <img src="img/top1-filme1.webp">
+                            <div class="info">
+                                <p>Filme de ação incrível</p>
+                            </div>
+                        </div>
+                </div>
+
             </div>
 
             <button class="next">▶</button>
-</section>
+        </div>
+    </div>
+</div>
 
 
 
+<div class="categoria">
+    <h2>Categoria: Terror</h2>
+    <button class="toggleBtn">Ocultar</button>
+    <div class="conteudo">
+        <div class="carousel-container">
+            <button class="prev">◀</button>
 
-
-<section id="filmes" class="secao">
-        <h2>Categoria: Comédia</h2>
-            <div class="carousel-container">
-                <button class="prev">◀</button>
             <div class="topicos">
-            <div class="card">
-                <h3 class="titulo">Top 1</h3>
-                <div class="conteudo">
-                    <img src="img/top1-filme1.webp" alt="">
-                    <div class="info">
-                        <p>Filme de ação incrível</p>
-                        <div class="avaliacao">★★★★★</div>
+                <div class="card">
+                    <div class="topo-card">
+                        <h3 class="top">1</h3>
+                        <h3 class="titulo">PECADORES</h3>
                     </div>
+                        <div class="conteudo-card">
+                            <img src="img/pecadores.webp">
+                            <div class="info">
+                                <p>17 de abril de 2025  | 2h 17min<br>
+                                    Direção: Ryan Coogler | Roteiro Ryan Coogler 
+                                    <br>Elenco: Michael B. Jordan, Hailee Steinfeld, Miles Caton
+                                    <br>Avaliação: 4.95/5 <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i> 
+
+                                    <br><br>Dois irmãos gêmeos (ambos interpretados por Michael B. Jordan) retornam ao Mississippi em 1932 para recomeçar a vida e abrir um clube de blues. Além de enfrentarem o racismo, traumas do passado e a ameaça de extremistas locais, eles se deparam com uma aterrorizante força sobrenatural sedenta por sangue.</p>
+                            </div>
+                        </div>
                 </div>
+
+
+                <div class="card">
+                    <div class="topo-card">
+                        <h3 class="top">2</h3>
+                        <h3 class="titulo">Top 2</h3>
+                    </div>
+                        <div class="conteudo-card">
+                            <img src="img/top1-filme1.webp">
+                            <div class="info">
+                                <p><i class="fas fa-star"></i>
+Meia: <i class="fas fa-star-half-alt"></i>
+Vazia: <i class="far fa-star"></i>
+                                    <br>Filme de ação incrível</p>
+                            </div>
+                        </div>
+                </div>
+
+
+                <div class="card">
+                    <div class="topo-card">
+                        <h3 class="top">3</h3>
+                        <h3 class="titulo">Top 3</h3>
+                    </div>
+                        <div class="conteudo-card">
+                            <img src="img/top1-filme1.webp">
+                            <div class="info">
+                                <p>Filme de ação incrível</p>
+                            </div>
+                        </div>
+                </div>
+
+
+                <div class="card">
+                    <div class="topo-card">
+                        <h3 class="top">4</h3>
+                        <h3 class="titulo">Top 4</h3>
+                    </div>
+                        <div class="conteudo-card">
+                            <img src="img/top1-filme1.webp">
+                            <div class="info">
+                                <p>Filme de ação incrível</p>
+                            </div>
+                        </div>
+                </div>
+
+
+                <div class="card">
+                    <div class="topo-card">
+                        <h3 class="top">5</h3>
+                        <h3 class="titulo">Top 5</h3>
+                    </div>
+                        <div class="conteudo-card">
+                            <img src="img/top1-filme1.webp">
+                            <div class="info">
+                                <p>Filme de ação incrível</p>
+                            </div>
+                        </div>
+                </div>
+
             </div>
 
-            <div class="card">
-                <h3 class="titulo">Top 2</h3>
-                <div class="conteudo">
-                    <img src="img/top1-filme1.webp" alt="">
-                    <div class="info">
-                        <p>Muita adrenalina e explosões</p>
-                        <div class="avaliacao">★★★★☆</div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="card">
-                <h3 class="titulo">Top 2</h3>
-                <div class="conteudo">
-                    <img src="img/top1-filme1.webp" alt="">
-                    <div class="info">
-                        <p>Muita adrenalina e explosões</p>
-                        <div class="avaliacao">★★★★☆</div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="card">
-                <h3 class="titulo">Top 2</h3>
-                <div class="conteudo">
-                    <img src="img/top1-filme1.webp" alt="">
-                    <div class="info">
-                        <p>Muita adrenalina e explosões</p>
-                        <div class="avaliacao">★★★★☆</div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="card">
-                <h3 class="titulo">Top 2</h3>
-                <div class="conteudo">
-                    <img src="img/top1-filme1.webp" alt="">
-                    <div class="info">
-                        <p>Muita adrenalina e explosões</p>
-                        <div class="avaliacao">★★★★☆</div>
-                    </div>
-                </div>
-            </div>
             <button class="next">▶</button>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+<div class="categoria">
+    <h2>Categoria: Drama</h2>
+    <button class="toggleBtn">Ocultar</button>
+    <div class="conteudo">
+        <div class="carousel-container">
+            <button class="prev">◀</button>
+
+            <div class="topicos">
+                <div class="card">
+                    <div class="topo-card">
+                        <h3 class="top">1</h3>
+                        <h3 class="titulo">Top 1</h3>
+                    </div>
+                        <div class="conteudo-card">
+                            <img src="img/top1-filme1.webp">
+                            <div class="info">
+                                <p>Filme de ação incrível</p>
+                            </div>
+                        </div>
+                </div>
+
+
+                <div class="card">
+                    <div class="topo-card">
+                        <h3 class="top">2</h3>
+                        <h3 class="titulo">Top 2</h3>
+                    </div>
+                        <div class="conteudo-card">
+                            <img src="img/top1-filme1.webp">
+                            <div class="info">
+                                <p>Filme de ação incrível</p>
+                            </div>
+                        </div>
+                </div>
+
+
+                <div class="card">
+                    <div class="topo-card">
+                        <h3 class="top">3</h3>
+                        <h3 class="titulo">Top 3</h3>
+                    </div>
+                        <div class="conteudo-card">
+                            <img src="img/top1-filme1.webp">
+                            <div class="info">
+                                <p>Filme de ação incrível</p>
+                            </div>
+                        </div>
+                </div>
+
+
+                <div class="card">
+                    <div class="topo-card">
+                        <h3 class="top">4</h3>
+                        <h3 class="titulo">Top 4</h3>
+                    </div>
+                        <div class="conteudo-card">
+                            <img src="img/top1-filme1.webp">
+                            <div class="info">
+                                <p>Filme de ação incrível</p>
+                            </div>
+                        </div>
+                </div>
+
+
+                <div class="card">
+                    <div class="topo-card">
+                        <h3 class="top">5</h3>
+                        <h3 class="titulo">Top 5</h3>
+                    </div>
+                        <div class="conteudo-card">
+                            <img src="img/top1-filme1.webp">
+                            <div class="info">
+                                <p>Filme de ação incrível</p>
+                            </div>
+                        </div>
+                </div>
+
+            </div>
+
+            <button class="next">▶</button>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+<div class="categoria">
+    <h2>Categoria: Romance</h2>
+    <button class="toggleBtn">Ocultar</button>
+    <div class="conteudo">
+        <div class="carousel-container">
+            <button class="prev">◀</button>
+
+            <div class="topicos">
+                <div class="card">
+                    <div class="topo-card">
+                        <h3 class="top">1</h3>
+                        <h3 class="titulo">Top 1</h3>
+                    </div>
+                        <div class="conteudo-card">
+                            <img src="img/top1-filme1.webp">
+                            <div class="info">
+                                <p>Filme de ação incrível</p>
+                            </div>
+                        </div>
+                </div>
+
+
+                <div class="card">
+                    <div class="topo-card">
+                        <h3 class="top">2</h3>
+                        <h3 class="titulo">Top 2</h3>
+                    </div>
+                        <div class="conteudo-card">
+                            <img src="img/top1-filme1.webp">
+                            <div class="info">
+                                <p>Filme de ação incrível</p>
+                            </div>
+                        </div>
+                </div>
+
+
+                <div class="card">
+                    <div class="topo-card">
+                        <h3 class="top">3</h3>
+                        <h3 class="titulo">Top 3</h3>
+                    </div>
+                        <div class="conteudo-card">
+                            <img src="img/top1-filme1.webp">
+                            <div class="info">
+                                <p>Filme de ação incrível</p>
+                            </div>
+                        </div>
+                </div>
+
+
+                <div class="card">
+                    <div class="topo-card">
+                        <h3 class="top">4</h3>
+                        <h3 class="titulo">Top 4</h3>
+                    </div>
+                        <div class="conteudo-card">
+                            <img src="img/top1-filme1.webp">
+                            <div class="info">
+                                <p>Filme de ação incrível</p>
+                            </div>
+                        </div>
+                </div>
+
+
+                <div class="card">
+                    <div class="topo-card">
+                        <h3 class="top">5</h3>
+                        <h3 class="titulo">Top 5</h3>
+                    </div>
+                        <div class="conteudo-card">
+                            <img src="img/top1-filme1.webp">
+                            <div class="info">
+                                <p>Filme de ação incrível</p>
+                            </div>
+                        </div>
+                </div>
+
+            </div>
+
+            <button class="next">▶</button>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+<div class="categoria">
+    <h2>Categoria: Comédia</h2>
+    <button class="toggleBtn">Ocultar</button>
+    <div class="conteudo">
+        <div class="carousel-container">
+            <button class="prev">◀</button>
+
+            <div class="topicos">
+                <div class="card">
+                    <div class="topo-card">
+                        <h3 class="top">1</h3>
+                        <h3 class="titulo">Top 1</h3>
+                    </div>
+                        <div class="conteudo-card">
+                            <img src="img/top1-filme1.webp">
+                            <div class="info">
+                                <p>Filme de ação incrível</p>
+                            </div>
+                        </div>
+                </div>
+
+
+                <div class="card">
+                    <div class="topo-card">
+                        <h3 class="top">2</h3>
+                        <h3 class="titulo">Top 2</h3>
+                    </div>
+                        <div class="conteudo-card">
+                            <img src="img/top1-filme1.webp">
+                            <div class="info">
+                                <p>Filme de ação incrível</p>
+                            </div>
+                        </div>
+                </div>
+
+
+                <div class="card">
+                    <div class="topo-card">
+                        <h3 class="top">3</h3>
+                        <h3 class="titulo">Top 3</h3>
+                    </div>
+                        <div class="conteudo-card">
+                            <img src="img/top1-filme1.webp">
+                            <div class="info">
+                                <p>Filme de ação incrível</p>
+                            </div>
+                        </div>
+                </div>
+
+
+                <div class="card">
+                    <div class="topo-card">
+                        <h3 class="top">4</h3>
+                        <h3 class="titulo">Top 4</h3>
+                    </div>
+                        <div class="conteudo-card">
+                            <img src="img/top1-filme1.webp">
+                            <div class="info">
+                                <p>Filme de ação incrível</p>
+                            </div>
+                        </div>
+                </div>
+
+
+                <div class="card">
+                    <div class="topo-card">
+                        <h3 class="top">5</h3>
+                        <h3 class="titulo">Top 5</h3>
+                    </div>
+                        <div class="conteudo-card">
+                            <img src="img/top1-filme1.webp">
+                            <div class="info">
+                                <p>Filme de ação incrível</p>
+                            </div>
+                        </div>
+                </div>
+
+            </div>
+
+            <button class="next">▶</button>
+        </div>
+    </div>
+</div>
+            
+
 </section>
 
+
+
+
+
+    
+</div>
 <script src="script.js"></script>
 </body>
 </html>

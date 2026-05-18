@@ -27,3 +27,39 @@ carousels.forEach(carousel => {
         container.scrollLeft -= scrollAmount;
     });
 });
+
+const categorias = document.querySelectorAll(".categoria");
+
+categorias.forEach(categoria => {
+    const btn = categoria.querySelector(".toggleBtn");
+    const conteudo = categoria.querySelector(".conteudo");
+
+    let aberto = true;
+
+    // 🔥 altura inicial correta
+    conteudo.style.height = conteudo.scrollHeight + "px";
+
+    btn.addEventListener("click", () => {
+        if (aberto) {
+            conteudo.style.height = conteudo.scrollHeight + "px";
+
+            requestAnimationFrame(() => {
+                conteudo.style.height = "0px";
+                conteudo.classList.add("escondido");
+            });
+
+            btn.textContent = "Mostrar";
+        } else {
+            conteudo.classList.remove("escondido");
+            conteudo.style.height = conteudo.scrollHeight + "px";
+
+            setTimeout(() => {
+                conteudo.style.height = "auto";
+            }, 400);
+
+            btn.textContent = "Ocultar";
+        }
+
+        aberto = !aberto;
+    });
+});
