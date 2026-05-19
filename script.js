@@ -1,31 +1,40 @@
-document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-    anchor.addEventListener("click", function(e) {
-        e.preventDefault();
-
-        document.querySelector(this.getAttribute("href"))
-            .scrollIntoView({
-                behavior: "smooth"
-            });
+window.addEventListener("load", () => {
+    document.querySelectorAll("img").forEach(img => {
+        img.decode().catch(() => {});
     });
 });
 
-const carousels = document.querySelectorAll('.carousel-container');
 
-carousels.forEach(carousel => {
-    const container = carousel.querySelector('.topicos');
-    const nextBtn = carousel.querySelector('.next');
-    const prevBtn = carousel.querySelector('.prev');
 
-    const card = container.querySelector('.card');
-    const scrollAmount = card.offsetWidth + 20;
+window.addEventListener("load", () => {
 
-    nextBtn.addEventListener('click', () => {
-        container.scrollLeft += scrollAmount;
+    const carousels = document.querySelectorAll('.carousel-container');
+
+    carousels.forEach(carousel => {
+        const container = carousel.querySelector('.topicos');
+        const nextBtn = carousel.querySelector('.next');
+        const prevBtn = carousel.querySelector('.prev');
+
+        function getScrollAmount() {
+            const card = container.querySelector('.card');
+            return card.offsetWidth + 20;
+        }
+
+        nextBtn.addEventListener('click', () => {
+            container.scrollBy({
+                left: getScrollAmount(),
+                behavior: "smooth"
+            });
+        });
+
+        prevBtn.addEventListener('click', () => {
+            container.scrollBy({
+                left: -getScrollAmount(),
+                behavior: "smooth"
+            });
+        });
     });
 
-    prevBtn.addEventListener('click', () => {
-        container.scrollLeft -= scrollAmount;
-    });
 });
 
 const categorias = document.querySelectorAll(".categoria");
