@@ -263,8 +263,23 @@ p {
     padding: 5px;
     background-color: rgb(51, 51, 51);
     border-radius: 10px;
-    margin-left: auto;
-    margin-top: auto;
+    margin-right: auto;
+    margin-top: 10px;
+}
+
+.alta {
+    background: #333;
+    color: gold;
+    width: 40px;
+    border-radius: 10px;
+    margin-bottom: 15px;
+    padding: 5px 5px 5px 8px;
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    text-shadow: none;
+    align-items: center;
+    align-content: center;
+
 }
 
 
