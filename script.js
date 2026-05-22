@@ -1,33 +1,25 @@
 window.addEventListener("load", () => {
-    document.querySelectorAll("img").forEach(img => {
-        img.decode().catch(() => {});
-    });
-});
 
+    const carrossel = document.querySelectorAll('.carrossel-categoria');
 
-
-window.addEventListener("load", () => {
-
-    const carousels = document.querySelectorAll('.carousel-container');
-
-    carousels.forEach(carousel => {
+    carrossel.forEach(carousel => {
         const container = carousel.querySelector('.topicos');
-        const nextBtn = carousel.querySelector('.next');
-        const prevBtn = carousel.querySelector('.prev');
+        const botaodireita = carousel.querySelector('.direita');
+        const botaoesquerda = carousel.querySelector('.esquerda');
 
         function getScrollAmount() {
             const card = container.querySelector('.card');
             return card.offsetWidth + 20;
         }
 
-        nextBtn.addEventListener('click', () => {
+        botaodireita.addEventListener('click', () => {
             container.scrollBy({
                 left: getScrollAmount(),
                 behavior: "smooth"
             });
         });
 
-        prevBtn.addEventListener('click', () => {
+        botaoesquerda.addEventListener('click', () => {
             container.scrollBy({
                 left: -getScrollAmount(),
                 behavior: "smooth"
@@ -40,7 +32,7 @@ window.addEventListener("load", () => {
 const categorias = document.querySelectorAll(".categoria");
 
 categorias.forEach(categoria => {
-    const btn = categoria.querySelector(".toggleBtn");
+    const botao = categoria.querySelector(".alternar-botao");
     const conteudo = categoria.querySelector(".conteudo");
 
     let aberto = true;
@@ -48,7 +40,7 @@ categorias.forEach(categoria => {
     // 🔥 altura inicial correta
     conteudo.style.height = conteudo.scrollHeight + "px";
 
-    btn.addEventListener("click", () => {
+    botao.addEventListener("click", () => {
         if (aberto) {
             conteudo.style.height = conteudo.scrollHeight + "px";
 
@@ -57,7 +49,7 @@ categorias.forEach(categoria => {
                 conteudo.classList.add("escondido");
             });
 
-            btn.textContent = "Mostrar";
+            botao.textContent = "Mostrar";
         } else {
             conteudo.classList.remove("escondido");
             conteudo.style.height = conteudo.scrollHeight + "px";
@@ -66,7 +58,7 @@ categorias.forEach(categoria => {
                 conteudo.style.height = "auto";
             }, 400);
 
-            btn.textContent = "Ocultar";
+            botao.textContent = "Ocultar";
         }
 
         aberto = !aberto;
