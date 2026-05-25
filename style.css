@@ -29,7 +29,7 @@ header {
 
 }
 
-.nav-principal {
+nav {
     position: fixed;
     top: 0;
     width: 100%;
@@ -42,15 +42,15 @@ header {
     box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.5);
 }
 
-.nav-principal a {
+nav a {
     color: white;
     text-decoration: none;
     margin: 0 20px;
     font-weight: bold;
     transition: 0.3s;
-    font-size: 1rem;
+    font-size: 15px;
     font-family: 'Poppins', sans-serif;
-}
+}   
 
 nav a:hover {
     color: #000000;
@@ -271,10 +271,7 @@ p {
     margin-bottom: 15px;
     padding: 5px 5px 5px 8px;
     font-family: 'Poppins', sans-serif;
-    text-align: center;
     text-shadow: none;
-    align-items: center;
-    align-content: center;
 }
 
 

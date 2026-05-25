@@ -2,25 +2,25 @@ window.addEventListener("load", () => {
 
     const carrossel = document.querySelectorAll('.carrossel-categoria');
 
-    carrossel.forEach(carousel => {
-        const container = carousel.querySelector('.topicos');
-        const botaodireita = carousel.querySelector('.direita');
-        const botaoesquerda = carousel.querySelector('.esquerda');
+    carrossel.forEach(categoria => {
+        const topicos = categoria.querySelector('.topicos');
+        const botaodireita = categoria.querySelector('.direita');
+        const botaoesquerda = categoria.querySelector('.esquerda');
 
         function getScrollAmount() {
-            const card = container.querySelector('.card');
+            const card = topicos.querySelector('.card');
             return card.offsetWidth + 20;
         }
 
         botaodireita.addEventListener('click', () => {
-            container.scrollBy({
+            topicos.scrollBy({
                 left: getScrollAmount(),
                 behavior: "smooth"
             });
         });
 
         botaoesquerda.addEventListener('click', () => {
-            container.scrollBy({
+            topicos.scrollBy({
                 left: -getScrollAmount(),
                 behavior: "smooth"
             });
@@ -37,7 +37,6 @@ categorias.forEach(categoria => {
 
     let aberto = true;
 
-    // 🔥 altura inicial correta
     conteudo.style.height = conteudo.scrollHeight + "px";
 
     botao.addEventListener("click", () => {
