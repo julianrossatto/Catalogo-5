@@ -1,5 +1,3 @@
-window.addEventListener("load", () => {
-
     const carrossel = document.querySelectorAll('.carrossel-categoria');
 
     carrossel.forEach(categoria => {
@@ -27,8 +25,7 @@ window.addEventListener("load", () => {
         });
     });
 
-});
-
+    
 const categorias = document.querySelectorAll(".categoria");
 
 categorias.forEach(categoria => {
