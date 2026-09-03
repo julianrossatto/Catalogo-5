@@ -24,8 +24,6 @@ _git clone https://github.com/julianrossatto/Catalogo-5.git_
 
 Acesse a pasta do projeto:
 
-_cd catalogo-filmes-series_
-
 Abra o arquivo index.html em seu navegador;
 
 ou
