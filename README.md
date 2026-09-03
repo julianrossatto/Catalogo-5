@@ -20,7 +20,7 @@ Por se tratar de um projeto desenvolvido com HTML, CSS e JavaScript, não é nec
 
 Clone este repositório:
 
-_git clone https://github.com/SEU-USUARIO/SEU-REPOSITORIO.git_
+_git clone https://github.com/julianrossatto/Catalogo-5.git_
 
 Acesse a pasta do projeto:
 
